@@ -37,11 +37,11 @@ Hay que tener en cuenta que el coste de amortización para un año se calcula de
 
 Una vez clonado el repositorio donde se encuentra CDE, se instala y lo uso para empaquetar un pequeño script que he hecho para cambiar extensiones de archivos de un directorio:
 
-[img1](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img1.png)
+![img1](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img1.png)
 
 Ahora, hago un zip de la carpeta cde-package que me ha generado para abrirlo en otro sistema, en este caso una distribución de Fedora. Una vez aquí, descomprimo el zip y busco el archivo en el directorio correspondiente dentro de cde-package (me genera una ruta igual a la ruta donde se ejecutó originalmente):
 
-[img2](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img2.png)
+![img2](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img2.png)
 
 En caso de que se hubiera querido ejecutar el script directamente en Fedora no hubiera sido posible, puesto que la ruta donde busca archivos para renombrar es propia de la máquina 1, así que en Fedora fallaría.
 
@@ -52,11 +52,11 @@ En caso de que se hubiera querido ejecutar el script directamente en Fedora no h
 Es un Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz, y la ejecución del comando no produce ninguna salida. En el archivo /proc/cpu veo que efectivamente no tiene ese flag:
 
 
-[img3](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img3.png)
+[!img3](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img3.png)
 
 Pero en la [página de especificaciones del procesador](http://ark.intel.com/es-es/products/83505/Intel-Core-i7-4770HQ-Processor-6M-Cache-up-to-3_40-GHz) aparece que sí tiene tecnología de virtualización de Intel, así que supongo que esto será porque la comprobación la he hecho en una máquina virtual.
 
-[img4](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img4.png)
+![img4](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img4.png)
 
 #### 5: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
@@ -66,6 +66,6 @@ He probado en dos sistemas y en los dos me dice que no existe la orden, por lo q
 
 Instalación de Qemu desde el repositorio de Fedora:
 
-[img5](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img5.png)
+![img5](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img5.png)
 
-[img6](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img6.png)
+![img6](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img6.png)

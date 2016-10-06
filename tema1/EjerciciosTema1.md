@@ -21,7 +21,21 @@ Hay que tener en cuenta que el coste de amortización para un año se calcula de
 
 #### 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) en el caso de que la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
+Primero veo el precio del servidor dedicado en [Dinahosting](https://dinahosting.com/dedicados):
 
+![img7](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img7.png)
+
+El precio (sin promoción es de 95,8€ al mes). El precio anual (en dolares) es 1287$.
+
+Una servicio en la nube de Amazon ([AWS](https://aws.amazon.com/es/ebs/pricing/)) con características similares:
+
+![img8](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img8.png)
+
+Sale por 0,052$ por hora. A eso hay que sumarle el precio del EBS (la manera que tiene Amazon de tarificar el uso de almacenamiento). Para un caso normal como usariamos en el servidor dedicado, no sale por más de 6$ al mes.
+
+Por lo tanto, si lo usamos un 1%, el precio anual es 4,64$ (más lo que se use de EBS, que en suma no superaria los 4-5$)
+
+Si lo usamos un 10%, el precio anual es 46,4$ (más lo que se use de EBS, que en suma no superaria los 40-50$).
 
 #### 3: ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
 

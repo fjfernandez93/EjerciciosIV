@@ -66,7 +66,7 @@ En caso de que se hubiera querido ejecutar el script directamente en Fedora no h
 Es un Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz, y la ejecución del comando no produce ninguna salida. En el archivo /proc/cpu veo que efectivamente no tiene ese flag:
 
 
-[!img3](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img3.png)
+![img3](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema1/capturas/img3.png)
 
 Pero en la [página de especificaciones del procesador](http://ark.intel.com/es-es/products/83505/Intel-Core-i7-4770HQ-Processor-6M-Cache-up-to-3_40-GHz) aparece que sí tiene tecnología de virtualización de Intel, así que supongo que esto será porque la comprobación la he hecho en una máquina virtual.
 

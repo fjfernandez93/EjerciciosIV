@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ranking</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Ranking empresas</h1>
+    <br>
+
+    <table>
+      <tr>
+        <th><h4 style="color: royalblue">Nombre</h4></th><th><h4 style="color: royalblue">Puntuación</h4></th>
+      </tr>
+      <% for(var i=0; i<info.length; i++) { %>
+      <tr>
+        <th><%=info[i].nombre%></th><th><%=info[i].puntuacion%></th>
+      </tr>
+      <% } %>
+    </table>
+
+    <br>
+    <a href="/">Volver a inicio</a>
+
+  </body>
+</html>

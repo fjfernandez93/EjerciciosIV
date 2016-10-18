@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listado</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Listado</h1>
+    <br>
+
+    <form action="/listado/consulta" method="post">
+      <select name="empresa">
+
+        <% for(var i=0; i<empresas.length; i++) { %>
+        <option value="<%= empresas[i] %>">
+          <%= empresas[i] %>
+        </option>
+        <% } %>
+
+      </select>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h3>Empresa: <%=nombre%></h3>
+    <table>
+      <tr>
+        <th><h4 style="color: royalblue">ID</h4></th><th><h4 style="color: royalblue">Nombre</h4></th>
+        <th><h4 style="color: royalblue">Puntuacion</h4></th><th><h4 style="color: royalblue">Comentario</h4></th>
+      </tr>
+      <% for(var i=0; i<info.length; i++) { %>
+      <tr>
+        <th><%=info[i].id%></th><th><%=info[i].nombre%></th>
+        <th><%=info[i].puntuacion%></th><th><%=info[i].comentario%></th>
+      </tr>
+      <% } %>
+    </table>
+
+    <br>
+    <a href="/">Volver a inicio</a>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Añadir calificación</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Añadir una calificación.</h1>
+    <p>Introduce los datos de tu calificación:</p>
+    <form action="/" method="post">
+      Nombre:<br>
+      <input type="text" name="nombre" value="">
+      <br>
+      Empresa:<br>
+      <select name="empresa">
+
+        <% for(var i=0; i<empresas.length; i++) { %>
+        <option value="<%= empresas[i] %>">
+          <%= empresas[i] %>
+        </option>
+        <% } %>
+
+      </select>
+      <br>
+      Puntuacion (entre 0 y 10):<br>
+      <input type="text" name="puntuacion" value="">
+      <br>
+      Comentario:<br>
+      <input type="text" name="comentario" value="">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <div>
+      <a href ='/empresa'>Añadir una empresa</a> |
+      <a href ='/ranking'>Ver ranking de empresas</a> |
+      <a href ='/listado'>Ver listado de valoraciones</a> |
+      <a href ='/borrar'>Borrar una valoración</a>
+    </div>
+
+  </body>
+</html>

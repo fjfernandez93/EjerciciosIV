@@ -34,7 +34,7 @@ Y que de la 0.11.x es la 0.11.16:
 - [x] Listar calificaciones para cada empresa
 - [x] Crear calificación y añadirla, comprobando que la persona no la   haya añadido ya (esta comprobación no está aún.)
 borrar calificación (si se arrepiente o te denuncia la empresa o algo)
-- [x]Hacer un ránking de empresas por calificación, por ejemplo
+- [x] Hacer un ránking de empresas por calificación, por ejemplo
 - [x] Crear un repositorio en GitHub para la librería y crear un pequeño programa que use algunas de sus funcionalidades.
 
 #### 3: Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
@@ -80,3 +80,12 @@ En cambio, si por lo que sea no se carga uno de ellos correctamente (en este cas
 ![img9](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img9.png)
 
 ![img10](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img10.png)
+
+#### 7: Convertir los tests unitarios anteriores con assert a programas de test y ejecutarlos desde mocha, usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vas a necesitar un poco más adelante.
+
+
+El único assert que he sido capaz de comprobar con Mocha es que cargue correctamente el archivo app.js, ya que al hacer la aplicación como una API REST no se como acceder a las funciones de app.js (o de cualquier otro) para hacer test dede el archivo de Mocha.
+
+![img11](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img11.png)
+
+![img12](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img12.png)

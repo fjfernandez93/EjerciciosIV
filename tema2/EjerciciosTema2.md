@@ -89,3 +89,22 @@ El único assert que he sido capaz de comprobar con Mocha es que cargue correcta
 ![img11](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img11.png)
 
 ![img12](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img12.png)
+
+
+#### 8: Haced los dos primeros pasos antes de pasar al tercero.
+
+Me registro en Travis:
+
+![img13](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img13.png)
+
+y activo la integración continua en el repositorio del ejemplo:
+
+![img14](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img14.png)
+
+El archivo .travis.yml lo dejo así:
+
+![img15](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img15.png)
+
+Y el resultado del test:
+
+![img16](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img16.png)

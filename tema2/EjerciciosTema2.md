@@ -90,6 +90,11 @@ El único assert que he sido capaz de comprobar con Mocha es que cargue correcta
 
 ![img12](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img12.png)
 
+ACTUALIZACIÓN: tras preguntar en clase, ya puedo hacer test a la API con la librería "supertest". Con ella compruebo que las peticiones GET a todas las rutas de la API devulven una respuesta con status 200 y un html:
+
+![img17](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img17.png)
+
+![img18](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img18.png)
 
 #### 8: Haced los dos primeros pasos antes de pasar al tercero.
 

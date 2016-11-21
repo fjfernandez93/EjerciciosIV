@@ -39,6 +39,8 @@ borrar calificación (si se arrepiente o te denuncia la empresa o algo)
 
 #### 3: Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
 
+Funciona en 0.11.16, en la 4.6.0 y en la 6.8.0.
+
 #### 4: Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
 
 Tras ejecutar "npm init" y dar la información que va pidiendo, queda un package.json así:
@@ -108,8 +110,8 @@ y activo la integración continua en el repositorio del ejemplo:
 
 El archivo .travis.yml lo dejo así:
 
-![img15](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img15.png)
+![img16](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img16.png)
 
 Y el resultado del test:
 
-![img16](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img16.png)
+![img15](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema2/capturas/img15.png)

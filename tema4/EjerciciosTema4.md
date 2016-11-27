@@ -55,7 +55,7 @@ libvirt, pero parece que no sirve. Asi que creo una nueva interfaz llamada "lxcb
 Después de varias pruebas, he decidido hacer el siguiente ejercicio en Ubuntu, puesto que en Fedora, el contendor con Fedora y el contenedor con Ubuntu dan problemas de red.
 
 
-### 3
+#### 3: Crear y ejecutar un contenedor basado en Debian.
 
 Creo un nuevo contenedor con
 
@@ -75,7 +75,6 @@ sudo jxc-start -t ubuntu -n ubu
 ```
 
 
-
 Y para conectarse a ella
 
 ```bash
@@ -84,6 +83,72 @@ sudo jxc-attach -t ubuntu -n ubu
 
 ```
 
-![img9](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img9.png)
+![img10](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img10.png)
 
 Por fin se ha creado con la interfaz puente correcta y tengo acceso sin problemas a la red.
+
+
+#### 4: Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+Descargo e instalo mediante un script que proporcionan en la página web:
+
+```bash
+wget https://lxc-webpanel.github.io/tools/install.sh -O - | bash
+```
+
+![img11](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img11.png)
+
+Y ahora puedo acceder desde la direccion localhost, puerto 5000 (con usuario "admin" y pass "admin"). Desde este panel, entre otras cosas puedo iniciar, parar o pausar los contenedores:
+
+![img12](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img12.png)
+
+#### Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+
+Pulsando sobre el nombre del contenedor me aparece una ventana de configuracion donde dejo estos valores:
+
+![img13](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img13.png)
+
+
+
+#### 5: Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+
+Primero instalo Nginx en el contenedor lxc con Ubuntu, y compruebo que está correctamente instalado:
+
+![img13](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img13.png)
+
+Ahora instalo una jaula.
+
+
+#### 6: Instalar docker.
+
+Siguiendo el [tutorial] oficial de Docker, antes de instalar necesito ejecutar los siguientes comandos para cumplir con los prerrequisitos:
+
+```bash
+sudo apt-get update
+
+sudo apt-get install apt-transport-https ca-certificates
+
+sudo apt-key adv \
+               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+
+sudo apt-get update
+
+sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+
+```
+Para instalarl Docker:
+
+```bash
+sudo apt-get install docker-engine
+
+sudo service docker start
+```
+
+Para comprobar que funciona correctamente:
+
+![img13](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img15.png)

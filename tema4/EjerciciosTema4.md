@@ -123,7 +123,7 @@ Ahora instalo una jaula.
 
 #### 6: Instalar docker.
 
-Siguiendo el [tutorial] oficial de Docker, antes de instalar necesito ejecutar los siguientes comandos para cumplir con los prerrequisitos:
+Siguiendo el [tutorial](https://docs.docker.com/engine/installation/linux/ubuntulinux/) oficial de Docker, antes de instalar necesito ejecutar los siguientes comandos para cumplir con los prerrequisitos:
 
 ```bash
 sudo apt-get update
@@ -151,4 +151,70 @@ sudo service docker start
 
 Para comprobar que funciona correctamente:
 
-![img13](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img15.png)
+![img15](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img15.png)
+
+
+#### 7: Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+Como imagen alternativa de ubuntu he elegido [esta](https://hub.docker.com/r/nickistre/ubuntu-lamp-wordpress/) que incluye una instalación de LAMP y de Worpress. Se instala con:
+
+```bash
+sudo docker pull nickistre/ubuntu-lamp-wordpress
+```
+![img16](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img16.png)
+
+Y el docker oficial de CentOS:
+
+```bash
+sudo docker pull centos
+```
+
+![img17](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img17.png)
+
+
+#### Buscar e instalar una imagen que incluya MongoDB.
+
+Una imagen que incluye MongoDB es esta (https://hub.docker.com/r/meanjs/mean/) para usar el stack MEAN.
+
+Se instala con:
+
+```bash
+sudo docker pull meanjs/mean
+```
+![img18](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img18.png)
+
+#### 8: Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
+
+He hecho este ejercicio en otro Docker de Ubuntu, ya que el que he instalado antes traía una instalación de LAMP.
+
+Instalo nginx desde el usuario root y lo inicio:
+
+```bash
+apt-get update
+apt-get install nginx
+service nginx start
+```
+Creo el usuario e inicio sesión:
+
+```bash
+adduser paco
+su paco
+```
+y compruebo que el servidor nginx funciona:
+
+```bash
+curl localhost
+```
+![img19](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img19.png)
+
+#### 9: Crear a partir del contenedor anterior una imagen persistente con commit.
+
+Para ver la ID del docker al que le voy a hacer el commit:
+
+```bash
+sudo docker images
+```
+
+Y ahora ejecuto el commit sobre el docker con esa ID y le pongo de nombre "ubu-nginx". Si vuelvo a ver los dockers disponibles, veo el nuevo:
+
+![img20](https://github.com/fjfernandez93/EjerciciosIV/blob/master/tema4/capturas/img20.png)

@@ -266,7 +266,7 @@ createdb -O pake fifa
 Exporto la variable de entorno:
 
 ```bash
-export DBDATA="postgres://pake:pake@localhost:5432/fifator"
+export DBDATA="postgres://pake:pake@localhost:5432/fifa"
 ```
 Y ejecuto el script que crea las tablas en la BD
 

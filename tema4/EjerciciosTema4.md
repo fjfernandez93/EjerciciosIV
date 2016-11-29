@@ -271,5 +271,5 @@ export DBDATA="postgres://pake:pake@localhost:5432/fifa"
 Y ejecuto el script que crea las tablas en la BD
 
 ```bash
-node models/
+node models/database.js
 ```
